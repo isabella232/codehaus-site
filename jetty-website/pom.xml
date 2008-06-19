@@ -13,6 +13,24 @@
   <name>Jetty Website :: Project Website</name>
   <build>
     <plugins>
+    <!--
+     * Process:
+     *   
+     * - checkout jetty-maven-plugin
+     * - checkout jetty-maven-jspc-plugin
+     * - run plugin:xdoc on both plugins
+     * - pull aggregate jxr artifact and unpack ( generate for both 6 and 7 )
+     * - pull aggregate javadoc artifact and unpack ( generate for both 6 and 7 )
+     * - pull individual artifact bits used below
+     * - push everything into correct location
+     * - generate site
+     *
+     * the pulling aggregates will be based on the ${jetty#.version} defined in the root
+     * pom, for each jetty release, 6 or 7 we will simply re-release the site, which is why the 
+     * website is now versioned seperately.
+    -->
+    
+    
   <!--
     <plugin>
         <groupId>org.codehaus.mojo</groupId>
