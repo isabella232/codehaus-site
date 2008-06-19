@@ -10,13 +10,12 @@
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <modules>
-    <module>project-skin</module>
-    <module>project-site</module>
+    <module>jetty-website-skin</module>
+    <module>jetty-website</module>
   </modules>
   <scm>
     <connection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</dev
-eloperConnection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</developerConnection>
     <url>http://fisheye.codehaus.org/viewrep/jetty/</url>
   </scm>
 </project>
