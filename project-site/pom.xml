@@ -2,19 +2,19 @@
 <project>
   <parent>
     <groupId>org.mortbay.jetty</groupId>
-    <artifactId>modules-website</artifactId>
-    <version>7.0-SNAPSHOT</version>
+    <artifactId>jetty-site-parent</artifactId>
+    <version>1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.mortbay.jetty</groupId>
-  <artifactId>project-site</artifactId>
+  <artifactId>jetty-website</artifactId>
   <packaging>pom</packaging>
-  <name>Jetty :: Project Website</name>
-  <version>7.0-SNAPSHOT</version>
+  <name>Jetty Website :: Project Website</name>
   <build>
     <plugins>
-      <plugin>
+  <!--
+    <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <executions>
@@ -73,7 +73,6 @@
               <executable>mvn</executable>
               <workingDirectory>../../..</workingDirectory>
               <arguments>
-                <!--<argument>-Dmaven.test.skip=true</argument>-->
                 <argument>-Pgenerate-site</argument>
                 <argument>jxr:jxr</argument>
                 <argument>javadoc:javadoc</argument>
@@ -174,6 +173,7 @@
           </execution>
         </executions>
       </plugin>
+-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
