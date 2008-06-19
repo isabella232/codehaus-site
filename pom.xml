@@ -13,4 +13,10 @@
     <module>project-skin</module>
     <module>project-site</module>
   </modules>
+  <scm>
+    <connection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</dev
+eloperConnection>
+    <url>http://fisheye.codehaus.org/viewrep/jetty/</url>
+  </scm>
 </project>
