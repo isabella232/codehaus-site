@@ -16,12 +16,11 @@
     <!--
      * Process:
      *   
-     * - checkout jetty-maven-plugin
-     * - checkout jetty-maven-jspc-plugin
-     * - run plugin:xdoc on both plugins
-     * - pull aggregate jxr artifact and unpack ( generate for both 6 and 7 )
-     * - pull aggregate javadoc artifact and unpack ( generate for both 6 and 7 )
-     * - pull individual artifact bits used below
+     * - pull jetty-maven-plugin site component
+     * - pull jetty-maven-jspc-plugin site component
+     * - pull jetty7 aggregate jxr + javadoc site component
+     * - pull jetty6 aggregate jxr + javadoc site component
+     * - pull jetty configure.dtd site component 
      * - push everything into correct location
      * - generate site
      *
@@ -30,92 +29,62 @@
      * website is now versioned seperately.
     -->
     
-    
-  <!--
     <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>exec-plugin-doc</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>mvn</executable>
-              <workingDirectory>../../../modules/extra/jetty-maven-plugin</workingDirectory>
-              <arguments>
-                <argument>-Dmaven.test.skip=true</argument>
-                <argument>plugin:xdoc</argument>
-              </arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>exec-jspc-plugin-doc</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>mvn</executable>
-              <workingDirectory>../../../modules/extra/jetty-maven-jspc-plugin</workingDirectory>
-              <arguments>
-                <argument>-Dmaven.test.skip=true</argument>
-                <argument>plugin:xdoc</argument>
-              </arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>exec-process-resources</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>mvn</executable>
-              <workingDirectory>../../..</workingDirectory>
-              <arguments>
-                <argument>-N</argument>
-                <argument>process-resources</argument>
-              </arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>exec-site-requirements</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>mvn</executable>
-              <workingDirectory>../../..</workingDirectory>
-              <arguments>
-                <argument>-Pgenerate-site</argument>
-                <argument>jxr:jxr</argument>
-                <argument>javadoc:javadoc</argument>
-              </arguments>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+      <artifactId>maven-dependency-plugin</artifactId>
+      <executions>
+           <execution>
+             <id>unpack</id>
+             <phase>generate-resources</phase>
+             <goals>
+               <goal>unpack</goal>
+             </goals>
+             <configuration>
+               <artifactItems>
+                 <artifactItem>
+                   <groupId>org.mortbay.jetty</groupId>
+                   <artifactId>jetty</artifactId>
+                   <version>${jetty7.version}</version>
+                   <classifier>site-component</classifier>
+                   <type>jar</type>
+                   <overWrite>true</overWrite>                  
+                   <includes>**</includes>        
+                 </artifactItem>
+                 <artifactItem>
+                   <groupId>org.mortbay.jetty</groupId>
+                   <artifactId>jetty-maven-plugin</artifactId>
+                   <version>${jetty7.version}</version>
+                   <classifier>site-component</classifier>
+                   <type>jar</type>
+                   <overWrite>true</overWrite>                                    
+                   <includes>**</includes>        
+                 </artifactItem>
+                 <artifactItem>
+                   <groupId>org.mortbay.jetty</groupId>
+                   <artifactId>jetty-jspc-maven-plugin</artifactId>
+                   <version>${jetty7.version}</version>
+                   <classifier>site-component</classifier>
+                   <type>jar</type>
+                   <overWrite>true</overWrite>              
+                   <includes>**</includes>        
+                 </artifactItem>
+                 <artifactItem>
+                   <groupId>org.mortbay.jetty</groupId>
+                   <artifactId>jetty-project</artifactId>
+                   <version>${jetty7.version}</version>
+                   <classifier>site-component</classifier>
+                   <type>jar</type>
+                   <overWrite>true</overWrite>              
+                   <includes>**</includes>        
+                 </artifactItem>
+               </artifactItems>
+             </configuration>
+           </execution>
+         </executions>
+    </plugin>
+   
       <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
         <executions>
-          <execution>
-            <id>clean</id>
-            <phase>clean</phase>
-            <goals>
-              <goal>run</goal>
-            </goals>
-            <configuration>
-              <tasks>
-                <delete failonerror="false" includeemptydirs="true">
-                  <fileset dir="${basedir}/../../../javadoc" includes="**/**"/>
-                </delete>
-              </tasks>
-            </configuration>
-          </execution>
           <execution>
             <id>copyfile</id>
             <phase>process-sources</phase>
@@ -124,46 +93,30 @@
             </goals>
             <configuration>
               <tasks>
+              <!--
                 <copy file="${basedir}/../../../README.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
                 <copy file="${basedir}/../../../VERSION.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
                 <copy file="${basedir}/../../../LICENSES/LICENSE.txt" todir="${basedir}/target/site/"
                       failonerror="false"></copy>
+              -->
                 <copy todir="${basedir}/target/site/apidocs" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/../../../target/site/apidocs">
+                  <fileset dir="${basedir}/target/dependency/jetty-project-${jetty7.version}/jetty-project/site/apidocs">
                     <include name="**/**"/>
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/xref" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/../../../target/site/xref">
+                  <fileset dir="${basedir}/target/dependency/jetty-project-${jetty7.version}/jetty-project/site/xref">
                     <include name="**/**"/>
                   </fileset>
                 </copy>
+                <!-- what are these?
                 <copy todir="${basedir}/target/site/xref-test" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/../../../target/site/xref-test">
                     <include name="**/**"/>
                   </fileset>
                 </copy>
-                <copy todir="${basedir}/target/generated-site/xdoc/maven-plugin" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/../../../modules/extra/jetty-maven-plugin/target/generated-site/xdoc">
-                    <include name="index.xml"/>
-                    <include name="run-mojo.xml"/>
-                    <include name="run-war-mojo.xml"/>
-                    <include name="run-exploded-mojo.xml"/>
-                  </fileset>
-                </copy>
-                <copy todir="${basedir}/target/generated-site/xdoc/jspc-maven-plugin" failonerror="false"
-                      overwrite="true">
-                  <fileset dir="${basedir}/../../../modules/extra/jetty-maven-jspc-plugin/target/generated-site/xdoc">
-                    <include name="index.xml"/>
-                    <include name="jspc-mojo.xml"/>
-                  </fileset>
-                </copy>
-                <copy todir="${basedir}/target/site" overwrite="true">
-                  <fileset dir="${basedir}/../../../modules/server/jetty/target/classes/org/mortbay/xml">
-                    <include name="*.dtd"/>
-                  </fileset>
-                </copy>
-                <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure.dtd"/>
+                -->
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure.dtd"/>
                 <copy file="${basedir}/target/site/configure_6_0.dtd"
                       tofile="${basedir}/target/site/configure_1_0.dtd"/>
                 <copy file="${basedir}/target/site/configure_6_0.dtd"
@@ -173,25 +126,9 @@
               </tasks>
             </configuration>
           </execution>
-          <execution>
-            <id>javadoc</id>
-            <phase>install</phase>
-            <goals>
-              <goal>run</goal>
-            </goals>
-            <configuration>
-              <tasks>
-                <copy failonerror="false" todir="../../../javadoc">
-                  <fileset dir="${basedir}/target/site/apidocs">
-                    <include name="**"/>
-                  </fileset>
-                </copy>
-              </tasks>
-            </configuration>
-          </execution>
         </executions>
       </plugin>
--->
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
