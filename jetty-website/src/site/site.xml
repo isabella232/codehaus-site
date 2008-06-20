@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
-
 <project name="jetty">
   <skin>
     <groupId>org.mortbay.jetty</groupId>
@@ -23,8 +21,10 @@
       <item name="Downloads" href="http://docs.codehaus.org/display/JETTY/Downloading+Jetty"/>
       <item name="Resources" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki"/>
       <item name="Documentation" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki"/>
-      <item name="JavaDoc" href="apidocs/index.html"/>
-      <item name="Source XRef" href="xref/index.html"/>
+      <item name="Jetty7 JavaDoc" href="jetty7/apidocs/index.html"/>
+      <item name="Jetty7 Source XRef" href="jetty7/xref/index.html"/>
+      <item name="Jetty6 JavaDoc" href="jetty6/apidocs/index.html"/>
+      <item name="Jetty6 Source XRef" href="jetty6/xref/index.html"/>
     </menu>
     <menu name="Maven Plugins">
       <item name="maven-jetty-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin"/>

@@ -39,7 +39,16 @@
                <goal>unpack</goal>
              </goals>
              <configuration>
-               <artifactItems>
+               <artifactItems>              
+                 <artifactItem>
+                   <groupId>org.mortbay.jetty</groupId>
+                   <artifactId>project-site</artifactId>
+                   <version>${jetty6.version}</version>
+                   <classifier>site-component</classifier>
+                   <type>jar</type>
+                   <overWrite>true</overWrite>                  
+                   <includes>**</includes>        
+                 </artifactItem>
                  <artifactItem>
                    <groupId>org.mortbay.jetty</groupId>
                    <artifactId>jetty</artifactId>
@@ -69,7 +78,7 @@
                  </artifactItem>
                  <artifactItem>
                    <groupId>org.mortbay.jetty</groupId>
-                   <artifactId>jetty-project</artifactId>
+                   <artifactId>jetty-distribution</artifactId>
                    <version>${jetty7.version}</version>
                    <classifier>site-component</classifier>
                    <type>jar</type>
@@ -87,25 +96,32 @@
         <executions>
           <execution>
             <id>copyfile</id>
-            <phase>process-sources</phase>
+            <phase>process-resources</phase>
             <goals>
               <goal>run</goal>
             </goals>
             <configuration>
-              <tasks>
-              <!--
-                <copy file="${basedir}/../../../README.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
-                <copy file="${basedir}/../../../VERSION.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
-                <copy file="${basedir}/../../../LICENSES/LICENSE.txt" todir="${basedir}/target/site/"
-                      failonerror="false"></copy>
-              -->
-                <copy todir="${basedir}/target/site/apidocs" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-project-${jetty7.version}/jetty-project/site/apidocs">
+              <tasks>        
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/README.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/VERSION.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/LICENSES/LICENSE.txt" todir="${basedir}/target/site/" failonerror="false"></copy>            
+                <copy todir="${basedir}/target/site/jetty7/apidocs" failonerror="false" overwrite="true">
+                  <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/apidocs">
                     <include name="**/**"/>
                   </fileset>
                 </copy>
-                <copy todir="${basedir}/target/site/xref" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-project-${jetty7.version}/jetty-project/site/xref">
+                <copy todir="${basedir}/target/site/jetty7/xref" failonerror="false" overwrite="true">
+                  <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/xref">
+                    <include name="**/**"/>
+                  </fileset>
+                </copy>
+                <copy todir="${basedir}/target/site/jetty6/apidocs" failonerror="false" overwrite="true">
+                  <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/apidocs">
+                    <include name="**/**"/>
+                  </fileset>
+                </copy>
+                <copy todir="${basedir}/target/site/jetty6/xref" failonerror="false" overwrite="true">
+                  <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/xref">
                     <include name="**/**"/>
                   </fileset>
                 </copy>
@@ -116,7 +132,7 @@
                   </fileset>
                 </copy>
                 -->
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure.dtd"/>
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure_6_0.dtd"/>
                 <copy file="${basedir}/target/site/configure_6_0.dtd"
                       tofile="${basedir}/target/site/configure_1_0.dtd"/>
                 <copy file="${basedir}/target/site/configure_6_0.dtd"
