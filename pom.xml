@@ -11,7 +11,7 @@
   <packaging>pom</packaging>
   <properties>
     <jetty6.version>6.1-SNAPSHOT</jetty6.version>
-    <jetty7.version>7.0-SNAPSHOT</jetty7.version>
+    <jetty7.version>7.0.0pre2</jetty7.version>
   </properties>
   <modules>
     <module>jetty-website-skin</module>
