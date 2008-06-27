@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <groupId>org.mortbay.jetty</groupId>
     <artifactId>jetty-site-parent</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -102,43 +101,40 @@
             </goals>
             <configuration>
               <tasks>        
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/README.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/VERSION.txt" todir="${basedir}/target/site/" failonerror="false"></copy>
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/LICENSES/LICENSE.txt" todir="${basedir}/target/site/" failonerror="false"></copy>            
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/README.txt" todir="${basedir}/target/site/" failonerror="false" />
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/VERSION.txt" todir="${basedir}/target/site/" failonerror="false" />
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/LICENSES/LICENSE.txt" todir="${basedir}/target/site/" failonerror="false" />            
                 <copy todir="${basedir}/target/site/jetty7/apidocs" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/apidocs">
-                    <include name="**/**"/>
+                    <include name="**/**" />
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty7/xref" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/xref">
-                    <include name="**/**"/>
+                    <include name="**/**" />
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty6/apidocs" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/apidocs">
-                    <include name="**/**"/>
+                    <include name="**/**" />
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty6/xref" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/xref">
-                    <include name="**/**"/>
+                    <include name="**/**" />
                   </fileset>
                 </copy>
                 <!-- what are these?
                 <copy todir="${basedir}/target/site/xref-test" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/../../../target/site/xref-test">
-                    <include name="**/**"/>
+                    <include name="**/**" />
                   </fileset>
                 </copy>
                 -->
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure_6_0.dtd"/>
-                <copy file="${basedir}/target/site/configure_6_0.dtd"
-                      tofile="${basedir}/target/site/configure_1_0.dtd"/>
-                <copy file="${basedir}/target/site/configure_6_0.dtd"
-                      tofile="${basedir}/target/site/configure_1_1.dtd"/>
-                <copy file="${basedir}/target/site/configure_6_0.dtd"
-                      tofile="${basedir}/target/site/configure_1_2.dtd"/>
+                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure_6_0.dtd" />
+                <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_0.dtd" />
+                <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_1.dtd" />
+                <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_2.dtd" />
               </tasks>
             </configuration>
           </execution>
