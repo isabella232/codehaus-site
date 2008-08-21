@@ -159,4 +159,11 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <site>
+      <id>jetty.website</id>
+      <name>Jetty Website</name>
+      <url>scp://www.mortbay.org/home/ftp/pub/staging/website</url>
+    </site>
+  </distributionManagement>
 </project>

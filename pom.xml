@@ -12,6 +12,7 @@
   <properties>
     <jetty6.version>6.1.12rc1</jetty6.version>
     <jetty7.version>7.0.0pre3</jetty7.version>
+    <maven-wagon-version>1.0-beta-4</maven-wagon-version>
   </properties>
   <modules>
     <module>jetty-website-skin</module>
@@ -22,4 +23,31 @@
     <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</developerConnection>
     <url>http://fisheye.codehaus.org/viewrep/jetty/</url>
   </scm>
+<!--
+remove when updating to parent version 5
+-->
+  <build>
+   <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh-external</artifactId>
+        <version>${maven-wagon-version}</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh</artifactId>
+        <version>${maven-wagon-version}</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav-jackrabbit</artifactId>
+        <version>${maven-wagon-version}</version>
+      </extension>
+    </extensions>
+  </build>
 </project>
