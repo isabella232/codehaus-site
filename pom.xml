@@ -6,7 +6,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jetty-site-parent</artifactId>
-  <version>3-SNAPSHOT</version>
+  <version>3</version>
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <properties>
@@ -19,9 +19,9 @@
     <module>jetty-website</module>
   </modules>
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</developerConnection>
-    <url>http://fisheye.codehaus.org/viewrep/jetty/</url>
+    <connection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-3</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-3</developerConnection>
+    <url>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-3</url>
   </scm>
 <!--
 remove when updating to parent version 5
