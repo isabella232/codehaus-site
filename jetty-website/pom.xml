@@ -104,22 +104,22 @@
                 <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/README.txt" todir="${basedir}/target/site/" failonerror="false" />
                 <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/VERSION.txt" todir="${basedir}/target/site/" failonerror="false" />
                 <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/LICENSES/LICENSE.txt" todir="${basedir}/target/site/" failonerror="false" />            
-                <copy todir="${basedir}/target/site/jetty7/apidocs" failonerror="false" overwrite="true">
+                <copy todir="${basedir}/target/site/jetty-7/apidocs" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/apidocs">
                     <include name="**/**" />
                   </fileset>
                 </copy>
-                <copy todir="${basedir}/target/site/jetty7/xref" failonerror="false" overwrite="true">
+                <copy todir="${basedir}/target/site/jetty-7/xref" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/xref">
                     <include name="**/**" />
                   </fileset>
                 </copy>
-                <copy todir="${basedir}/target/site/jetty6/apidocs" failonerror="false" overwrite="true">
+                <copy todir="${basedir}/target/site/jetty-6/apidocs" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/apidocs">
                     <include name="**/**" />
                   </fileset>
                 </copy>
-                <copy todir="${basedir}/target/site/jetty6/xref" failonerror="false" overwrite="true">
+                <copy todir="${basedir}/target/site/jetty-6/xref" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/xref">
                     <include name="**/**" />
                   </fileset>
