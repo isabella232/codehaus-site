@@ -49,11 +49,13 @@ remove when updating to parent version 5
         <version>${maven-wagon-version}</version>
       </extension>
     </extensions>
+    <plugins>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
           <tagBase>https://svn.codehaus.org/jetty/site/tags</tagBase>
         </configuration>
       </plugin>
+    </plugins>
   </build>
 </project>
