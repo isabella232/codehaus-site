@@ -10,8 +10,8 @@
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <properties>
-    <jetty6.version>6.1.12rc1</jetty6.version>
-    <jetty7.version>7.0.0pre3</jetty7.version>
+    <jetty6.version>6.1-SNAPSHOT</jetty6.version>
+    <jetty7.version>7.0-SNAPSHOT</jetty7.version>
     <maven-wagon-version>1.0-beta-4</maven-wagon-version>
   </properties>
   <modules>
