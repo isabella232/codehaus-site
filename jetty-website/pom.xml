@@ -40,8 +40,8 @@
              <configuration>
                <artifactItems>              
                  <artifactItem>
-                   <groupId>org.mortbay.jetty.site</groupId>
-                   <artifactId>project-site-component</artifactId>
+                   <groupId>org.mortbay.jetty</groupId>
+                   <artifactId>jetty-assembly</artifactId>
                    <version>${jetty6.version}</version>
                    <classifier>site-component</classifier>
                    <type>jar</type>
@@ -143,7 +143,7 @@
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty-jspc-maven-plugin" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/maven-jetty-jspc-plugin-${jetty6.version}/jspc-maven-plugin/target/site">
+                  <fileset dir="${basedir}/target/dependency/jetty-jspc-maven-plugin-${jetty7.version}/jetty-jspc-maven-plugin/target/site">
                     <include name="**/**" />
                   </fileset>
                 </copy>
@@ -153,12 +153,12 @@
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty-6/apidocs" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/apidocs">
+                  <fileset dir="${basedir}/target/dependency/jetty-assembly-${jetty6.version}/jetty-assembly-${jetty6.version}/target/site/apidocs">
                     <include name="**/**" />
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty-6/xref" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/project-site-${jetty6.version}/jetty-distribution-${jetty6.version}-site-component/target/site/xref">
+                  <fileset dir="${basedir}/target/dependency/jetty-assembly-${jetty6.version}/jetty-assembly-${jetty6.version}/target/site/xref">
                     <include name="**/**" />
                   </fileset>
                 </copy>
