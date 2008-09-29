@@ -2,7 +2,7 @@
   <parent>
     <groupId>org.mortbay.jetty</groupId>
     <artifactId>jetty-parent</artifactId>
-    <version>5</version>
+    <version>6-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jetty-site-parent</artifactId>
@@ -12,7 +12,9 @@
   <properties>
     <jetty6.version>6.1-SNAPSHOT</jetty6.version>
     <jetty7.version>7.0-SNAPSHOT</jetty7.version>
+<!--
     <maven-wagon-version>1.0-beta-4</maven-wagon-version>
+-->
   </properties>
   <modules>
     <module>jetty-website-skin</module>
