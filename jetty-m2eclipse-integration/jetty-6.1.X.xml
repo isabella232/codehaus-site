@@ -1,0 +1,71 @@
+<welcome>
+
+  <entry type="about">
+    <attribute id="name">Jetty - 6.1.X</attribute>
+    <attribute id="value"><![CDATA[Jetty is an open-source, standards-based, full-featured web server implemented entirely in Java. It is released under the Apache 2.0 licence and is therefore free for commercial use and distribution. First created in 1995, Jetty has benefitted from input from a vast user community and consistent and focused development by a stable core of lead developers. There are many more examples of Jetty in action on the Jetty Powered Page that has selections from among the tens of thousands of production Jetty instances. However, as Jetty aims to be as unobtrusive as possible, countless websites and products are based around Jetty, but Jetty is invisible!]]></attribute>
+  </entry>
+
+  <entry type="key">
+    <attribute id="value">org.mortbay.jetty:jetty:6.1-SNAPSHOT</attribute>
+  </entry>
+  
+  <entry type="link">
+    <attribute id="name">Project Web Page</attribute>
+    <attribute id="value">http://www.mortbay.org/jetty</attribute>
+  </entry>
+  <entry type="link">
+    <attribute id="name">Project Wiki</attribute>
+    <attribute id="value">http://docs.codehaus.org/display/JETTY/Home</attribute>
+  </entry>
+  <entry type="link">
+    <attribute id="name">Project FAQ</attribute>
+    <attribute id="value">http://docs.codehaus.org/display/JETTY</attribute>
+  </entry>
+
+  <entry type="scm">
+    <attribute id="name">Developers Connection</attribute>
+    <attribute id="value">scm:svn:https://svn.codehaus.org/jetty/jetty/branches/jetty-6.1</attribute>
+  </entry>
+ 
+
+  <entry type="taskRepository">  
+    <attribute id="name">Codehaus</attribute>
+    <attribute id="kind">jira</attribute>
+    <attribute id="value">http://jira.codehaus.org/</attribute>
+  </entry>
+
+  <entry type="taskQuery"> 
+    <attribute id="name">Recently Open Issues</attribute>
+    <attribute id="link"><![CDATA[http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&&created%3Aprevious=-1w&pid=11160&sorter/field=created&sorter/order=DESC]]></attribute>
+    <attribute id="value"><![CDATA[http://jira.codehaus.org/sr/jira.issueviews:searchrequest-rss/temp/SearchRequest.xml?&created%3Aprevious=-1w&pid=11160&sorter/field=created&sorter/order=DESC&tempMax=1000]]></attribute>
+  </entry>  
+  <entry type="taskQuery"> 
+    <attribute id="name=">Recently Resolved Issues Issues</attribute>
+    <attribute id="link="><![CDATA[http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&&pid=11160&updated%3Aprevious=-1w&status=5&status=6&sorter/field=updated&sorter/order=DESC]]></attribute>
+    <attribute id="value"><![CDATA[http://jira.codehaus.org/sr/jira.issueviews:searchrequest-rss/temp/SearchRequest.xml?&pid=11160&updated%3Aprevious=-1w&status=5&status=6&sorter/field=updated&sorter/order=DESC&tempMax=1000]]></attribute>
+  </entry>  
+
+  <entry type="rss">
+    <attribute id="name=">Jetty Blogs</attribute>
+    <attribute id="link=">http://blogs.webtide.com/</attribute>
+    <attribute id="value">http://blogs.webtide.com/rss.xml</attribute>
+  </entry>  
+  
+  <entry type="rss"> 
+    <attribute id="name=">Jetty Developer Mailing List</attribute>
+    <attribute id="link=">http://www.nabble.com/Jetty-Discuss-f60.html</attribute>
+    <attribute id="value">http://www.nabble.com/Jetty-Discuss-f60.xml</attribute>
+  </entry>  
+  
+  <entry type="rss"> 
+    <attribute id="name=">Jetty User Mailing List</attribute>
+    <attribute id="link=">http://www.nabble.com/Jetty-Support-f61.html</attribute>
+    <attribute id="value">http://www.nabble.com/Jetty-Support-f61.xml</attribute>
+  </entry>  
+<!-- (generate cheatsheet for jetty plugin use?
+  <entry type="cheatSheet">
+    <attribute id="name">Create new Maven plugin</attribute>
+    <attribute id="value">http://svn.sonatype.org/~eu/HelloWorld.xml</attribute>
+  </entry>  
+-->
+</welcome>
