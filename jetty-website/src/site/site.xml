@@ -31,9 +31,9 @@
       <item name="maven-jetty-jspc-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Jspc+Plugin"/>
     </menu>
     <menu name="Commercial Services">
-      <item name="Support" href="http://www.webtide.com/support.jsp"/>
-      <item name="Training" href="http://www.webtide.com/training.jsp"/>
-      <item name="Consulting" href="http://www.webtide.com/development.jsp"/>
+      <item name="Advice" href="http://www.webtide.com/advice"/>
+      <item name="Consulting" href="http://www.webtide.com/development"/>
+      <item name="Support" href="http://www.webtide.com/support"/>
     </menu>
   </body>
   <poweredBy>

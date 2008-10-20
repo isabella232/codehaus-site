@@ -8,7 +8,7 @@
     <iframe src="http://www.webtide.com/include/inc_offers.jsp" class="offers">
        <a href="http://www.webtide.com">Webtide special offers</a>
     </iframe>
-     <iframe src="http://www.webtide.com/include/inc_blogs.jsp" class="study">
+     <iframe src="http://www.webtide.com/include/inc_blog.jsp" class="study">
        <a href="http://blogs.webtide.com">Blogs about Jetty.</a>
     </iframe>
 
