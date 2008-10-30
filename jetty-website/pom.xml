@@ -162,12 +162,12 @@
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty-6/apidocs" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-assembly-${jetty6.version}/jetty-assembly-${jetty6.version}/target/site/apidocs">
+                  <fileset dir="${basedir}/target/dependency/jetty-assembly-${jetty6.version}/jetty-assembly-${jetty6.version}/javadoc">
                     <include name="**/**" />
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/jetty-6/xref" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-assembly-${jetty6.version}/jetty-assembly-${jetty6.version}/target/site/xref">
+                  <fileset dir="${basedir}/target/dependency/jetty-assembly-${jetty6.version}/jetty-assembly-${jetty6.version}/jxr">
                     <include name="**/**" />
                   </fileset>
                 </copy>
