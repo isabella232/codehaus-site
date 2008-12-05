@@ -10,7 +10,7 @@
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <properties>
-    <jetty6.version>6.1.12.rc5</jetty6.version>
+    <jetty6.version>6.1.14</jetty6.version>
     <jetty7.version>7.0.0.pre5</jetty7.version>
     <cometd.version>1.0.beta4</cometd.version>
 <!--
