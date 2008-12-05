@@ -12,6 +12,7 @@
   <properties>
     <jetty6.version>6.1.12.rc5</jetty6.version>
     <jetty7.version>7.0.0.pre5</jetty7.version>
+    <cometd.version>1.0.beta4</cometd.version>
 <!--
     <maven-wagon-version>1.0-beta-4</maven-wagon-version>
 -->
@@ -35,4 +36,34 @@
       </plugin>
     </plugins>
   </build>
+  i  <repositories>
+    <repository>
+      <id>dojo</id>
+      <name>Dojo Maven2 Repository</name>
+      <url>http://download.dojotoolkit.org/maven2</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>daily</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <layout>default</layout>
+    </repository>
+    <repository>
+      <id>dojoSnapshots</id>
+      <name>Dojo Maven2 Snapshot Repository</name>
+      <url>http://download.dojotoolkit.org/maven2-snapshot</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
+      </snapshots>
+      <layout>default</layout>
+    </repository>
+  </repositories>
 </project>

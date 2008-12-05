@@ -90,7 +90,7 @@
                    <version>${jetty7.version}</version>
                    <classifier>site-component</classifier>
                    <type>jar</type>
-                   <overWrite>true</overWrite>                                    
+                   <overWrite>true</overWrite>
                    <includes>**</includes>        
                  </artifactItem>
                  <artifactItem>
@@ -110,6 +110,16 @@
                    <type>jar</type>
                    <overWrite>true</overWrite>              
                    <includes>**</includes>        
+                 </artifactItem>
+                 <artifactItem>
+                   <groupId>org.cometd.java</groupId>
+                   <artifactId>cometd-api</artifactId>
+                   <version>${cometd.version}</version>
+                   <classifier>javadoc</classifier>
+                   <type>jar</type>
+                   <overWrite>true</overWrite>              
+                   <includes>**</includes>        
+<outputDirectory>${project.build.directory}/dependency/cometd-api</outputDirectory>
                  </artifactItem>
                </artifactItems>
              </configuration>
@@ -171,7 +181,12 @@
                     <include name="**/**" />
                   </fileset>
                 </copy>
-                <!-- what are these?
+                <copy todir="${basedir}/target/site/cometd/apidocs" failonerror="false" overwrite="true">
+                  <fileset dir="${basedir}/target/dependency/cometd-api">
+                    <include name="**/**" />
+                  </fileset>
+                </copy>
+                 <!-- what are these?
                 <copy todir="${basedir}/target/site/xref-test" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/../../../target/site/xref-test">
                     <include name="**/**" />
@@ -180,7 +195,7 @@
                 -->
                 <copy file="${basedir}/target/dependency/jetty-xml-${jetty7.version}/jetty-xml/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure_6_0.dtd" />
                 <copy file="${basedir}/target/dependency/jetty-xml-${jetty7.version}/jetty-xml/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure.dtd" />
-                <<copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_0.dtd" />
+                <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_0.dtd" />
                 <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_1.dtd" />
                 <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_2.dtd" />
               </tasks>

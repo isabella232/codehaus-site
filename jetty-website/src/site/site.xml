@@ -25,6 +25,7 @@
       <item name="Jetty7 Source XRef" href="jetty-7/xref/index.html"/>
       <item name="Jetty6 JavaDoc" href="jetty-6/apidocs/index.html"/>
       <item name="Jetty6 Source XRef" href="jetty-6/xref/index.html"/>
+      <item name="Cometd Javadoc" href="cometd/apidocs/index.html"/>
     </menu>
     <menu name="Maven Plugins">
       <item name="maven-jetty-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin"/>
