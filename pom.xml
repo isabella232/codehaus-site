@@ -6,7 +6,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jetty-site-parent</artifactId>
-  <version>5</version>
+  <version>5-SNAPSHOT</version>
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <properties>
@@ -36,7 +36,7 @@
       </plugin>
     </plugins>
   </build>
-  i  <repositories>
+  <repositories>
     <repository>
       <id>dojo</id>
       <name>Dojo Maven2 Repository</name>
