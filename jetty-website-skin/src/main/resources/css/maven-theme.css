@@ -3,16 +3,14 @@ body {
 	font-family: Arial, Helvetica, Verdana, sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 13px;
+	font-size: 0.8em;
 	padding: 0px;
 }
 td, select, input, li{
 	font-family: Arial, Helvetica, Verdana, sans-serif;
-	font-size: 12px;
 }
 code{
   font-family: Courier, monospace;
-  font-size: 12px;
 }
 a {
   text-decoration: none;
@@ -28,18 +26,18 @@ a:active, a:hover {
 }
 #legend li.externalLink {
   background: url(../images/external.png) left top no-repeat;
-  padding-left: 18px;
+  padding-left: 1.2em;
 }
 a.externalLink, a.externalLink:link, a.externalLink:visited, a.externalLink:active, a.externalLink:hover {
-  padding-right: 18px;
+  padding-right: 1.2em;
 }
 #legend li.newWindow {
   background: url(../images/newwindow.png) left top no-repeat;
-  padding-left: 18px;
+  padding-left: 1.2em;
 }
 a.newWindow, a.newWindow:link, a.newWindow:visited, a.newWindow:active, a.newWindow:hover {
   background: url(../images/newwindow.png) right center no-repeat;
-  padding-right: 18px;
+  padding-right: 1.2em;
 }
 
 h1 {
@@ -82,7 +80,6 @@ h5 {
 
 p {
   line-height: 1.3em;
-  font-size: 12px;
   color: #000;
 }
 #breadcrumbs {
@@ -127,10 +124,6 @@ table.bodyTable th {
   border-bottom: 1px solid #aaaaaa;
 }
 
-table.bodyTable th, table.bodyTable td {
-  font-size: 11px;
-}
-
 table.bodyTable tr.a {
   border-bottom: 1px solid #aaaaaa;
 }
@@ -152,15 +145,12 @@ dl {
 }
 
 .subsectionTitle {
-	font-size: 13px;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: #666;
 
 }
 
-table {
-	font-size: 10px;
-}
 .xright a:link, .xright a:visited, .xright a:active {
   color: #4876FF;
 }
@@ -181,7 +171,7 @@ table {
 #navcolumn li {
   color: #4876FF;
   text-align:right;
-  padding-right: 10px;
+  padding-right: 0.8em;
   padding-top: 2px;
 }
 
@@ -199,9 +189,6 @@ table {
 	color: #333333;
 }
 
-.subsection p {
-	font-size: 12px;
-}
 #footer {
   padding: 10px;
   margin: 20px 0px 20px 0px;
@@ -226,4 +213,8 @@ table {
 }
 #organizationLogo img, #projectLogo img, #projectLogo span{
   margin: 8px;
+}
+
+.poweredBy img { 
+  max-width: 150px;
 }
