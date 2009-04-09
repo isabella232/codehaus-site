@@ -17,7 +17,6 @@
      *   
      * - pull jetty-maven-plugin site component
      * - pull jetty-maven-jspc-plugin site component
-     * - pull jetty7 aggregate jxr + javadoc site component
      * - pull jetty6 aggregate jxr + javadoc site component
      * - pull jetty configure.dtd site component 
      * - push everything into correct location
@@ -38,7 +37,15 @@
                <goal>unpack</goal>
              </goals>
              <configuration>
-               <artifactItems>              
+               <artifactItems>                 
+                 <artifactItem>
+                   <groupId>org.mortbay.jetty</groupId>
+                   <artifactId>jetty</artifactId>
+                   <version>${jetty6.version}</version>
+                   <type>jar</type>
+                   <overWrite>true</overWrite>                  
+                   <includes>**</includes>        
+                 </artifactItem>          
                  <artifactItem>
                    <groupId>org.mortbay.jetty</groupId>
                    <artifactId>jetty-assembly</artifactId>
@@ -67,68 +74,14 @@
                    <includes>**</includes>        
                  </artifactItem>
                  <artifactItem>
-                   <groupId>org.mortbay.jetty</groupId>
-                   <artifactId>jetty</artifactId>
-                   <version>${jetty7.version}</version>
-                   <classifier>site-component</classifier>
-                   <type>jar</type>
-                   <overWrite>true</overWrite>                  
-                   <includes>**</includes>        
-                 </artifactItem>
-                 <!-- temporary until we can get a new release of Jetty 7-->
-                 <artifactItem>
-                   <groupId>org.mortbay.jetty</groupId>
-                   <artifactId>jetty</artifactId>
-                   <version>${jetty6.version}</version>
-                   <type>jar</type>
-                   <overWrite>true</overWrite>                  
-                   <includes>**</includes>        
-                 </artifactItem>
-                 <!--artifactItem>
-                   <groupId>org.mortbay.jetty</groupId>
-                   <artifactId>jetty-xml</artifactId>
-                   <version>${jetty7.version}</version>
-                   <classifier>site-component</classifier>
-                   <type>jar</type>
-                   <overWrite>true</overWrite>                  
-                   <includes>**</includes>        
-                 </artifactItem-->
-                 <artifactItem>
-                   <groupId>org.mortbay.jetty</groupId>
-                   <artifactId>jetty-maven-plugin</artifactId>jetty
-                   <version>${jetty7.version}</version>
-                   <classifier>site-component</classifier>
-                   <type>jar</type>
-                   <overWrite>true</overWrite>
-                   <includes>**</includes>        
-                 </artifactItem>
-                 <artifactItem>
-                   <groupId>org.mortbay.jetty</groupId>
-                   <artifactId>jetty-jspc-maven-plugin</artifactId>
-                   <version>${jetty7.version}</version>
-                   <classifier>site-component</classifier>
-                   <type>jar</type>
-                   <overWrite>true</overWrite>              
-                   <includes>**</includes>        
-                 </artifactItem>
-                 <artifactItem>
-                   <groupId>org.mortbay.jetty</groupId>
-                   <artifactId>jetty-assembly</artifactId>
-                   <version>${jetty7.version}</version>
-                   <classifier>site-component</classifier>
-                   <type>jar</type>
-                   <overWrite>true</overWrite>              
-                   <includes>**</includes>        
-                 </artifactItem>
-                 <artifactItem>
                    <groupId>org.cometd.java</groupId>
                    <artifactId>cometd-api</artifactId>
                    <version>${cometd.version}</version>
                    <classifier>javadoc</classifier>
                    <type>jar</type>
                    <overWrite>true</overWrite>              
-                   <includes>**</includes>        
-<outputDirectory>${project.build.directory}/dependency/cometd-api</outputDirectory>
+                   <includes>**</includes>   
+                   <outputDirectory>${project.build.directory}/dependency/cometd/apidocs</outputDirectory>     
                  </artifactItem>
                </artifactItems>
              </configuration>
@@ -146,15 +99,7 @@
               <goal>run</goal>
             </goals>
             <configuration>
-              <tasks>        
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/README.txt" todir="${basedir}/target/site/" failonerror="false" />
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/VERSION.txt" todir="${basedir}/target/site/" failonerror="false" />
-                <copy file="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/LICENSES/LICENSE.txt" todir="${basedir}/target/site/" failonerror="false" />            
-                <copy todir="${basedir}/target/site/jetty-7/apidocs" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/apidocs">
-                    <include name="**/**" />
-                  </fileset>
-                </copy>
+              <tasks>  
                 <copy todir="${basedir}/target/site/maven-plugin" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/maven-jetty-plugin-${jetty6.version}/maven-plugin/target/site">
                     <include name="**/**" />
@@ -162,21 +107,6 @@
                 </copy>
                 <copy todir="${basedir}/target/site/jspc-maven-plugin" failonerror="false" overwrite="true">
                   <fileset dir="${basedir}/target/dependency/maven-jetty-jspc-plugin-${jetty6.version}/jspc-maven-plugin/target/site">
-                    <include name="**/**" />
-                  </fileset>
-                </copy>
-                <copy todir="${basedir}/target/site/jetty-maven-plugin" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-maven-plugin-${jetty7.version}/jetty-maven-plugin/target/site">
-                    <include name="**/**" />
-                  </fileset>
-                </copy>
-                <copy todir="${basedir}/target/site/jetty-jspc-maven-plugin" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-jspc-maven-plugin-${jetty7.version}/jetty-jspc-maven-plugin/target/site">
-                    <include name="**/**" />
-                  </fileset>
-                </copy>
-                <copy todir="${basedir}/target/site/jetty-7/xref" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/jetty-${jetty7.version}/jetty-distribution-${jetty7.version}-site-component/target/site/xref">
                     <include name="**/**" />
                   </fileset>
                 </copy>
@@ -191,21 +121,11 @@
                   </fileset>
                 </copy>
                 <copy todir="${basedir}/target/site/cometd/apidocs" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/target/dependency/cometd-api">
+                  <fileset dir="${basedir}/target/dependency/cometd/apidocs">
                     <include name="**/**" />
                   </fileset>
                 </copy>
-                 <!-- what are these?
-                <copy todir="${basedir}/target/site/xref-test" failonerror="false" overwrite="true">
-                  <fileset dir="${basedir}/../../../target/site/xref-test">
-                    <include name="**/**" />
-                  </fileset>
-                </copy>
-                -->
-                <!-- temporary, until we can release another version of Jetty 7
-                <copy file="${basedir}/target/dependency/jetty-xml-${jetty7.version}/jetty-xml/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure_6_0.dtd" />
-                <copy file="${basedir}/target/dependency/jetty-xml-${jetty7.version}/jetty-xml/src/main/resources/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure.dtd" /> 
-                -->
+                
                 <copy file="${basedir}/target/dependency/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure_6_0.dtd" />
                 <copy file="${basedir}/target/dependency/org/mortbay/xml/configure_6_0.dtd" tofile="${basedir}/target/site/configure.dtd" />                
                 <copy file="${basedir}/target/site/configure_6_0.dtd" tofile="${basedir}/target/site/configure_1_0.dtd" />

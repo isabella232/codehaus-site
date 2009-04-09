@@ -15,97 +15,35 @@
 <div class="summary">
  <div class="news"></div>
 <p>
-<span>Jetty</span> is a HTTP server, HTTP client, and Servlet container with small
-foot print, embeddability, enterprise scalability and advanced asynchronous features. 
-</p>
-<p>
-First created in 1995, Jetty has benefitted from input from a vast user community and consistent and
-focused development by a stable core of lead developers. On the 24th of March, 2009, the Jetty-7 code base 
-was converted to org.eclipse.jetty package space and checked  into the Eclipse Jetty SVN repository.
-</p>
-<p>
-<a href="http://www.eclipse.org/jetty/">Jetty is now in incubation at the Eclipse Foundation</a>. 
-Once established as an Eclipse project, it will be dual-licensed, maintaining its current Apache 2.0 <a href="./LICENSE.TXT">license</a>,
-and adding the Eclipse Public License. Jetty may be used and distributed under the terms of either. It is free for commercial use and distribution.
-</p>
+
+
+	  <p><span>Jetty</span> is an open-source project providing a HTTP server, HTTP client and <a href="http://java.sun.com/javaee/5/docs/api/javax/servlet/package-summary.html">javax.servlet</a> container.  
+	  These 100% java components are full-featured, standards based, small foot print, embeddable, 
+	  asynchronous and enterprise scalable.
+	  Jetty is dual licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a> 
+	  and/or <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>. Jetty is
+	  free for commercial use and distribution under the terms of either of those licenses.
+	  </p>
+	  
+	  <p>Jetty is used in a wide variety of projects and products: embedded in <a href="http://code.google.com/p/i-jetty/">phones</a>; in tools like the the <a href="http://www.eclipse.org/">eclipse IDE</a>, in
+	  frameworks like <a href="http://code.google.com/webtoolkit/">GWT</a>, in application servers like <a href="http://geronimo.apache.org/">Apache Geronimo</a> and in huge clusters like 
+	  <a href="http://developer.yahoo.net/blogs/hadoop/2008/07/apache_hadoop_wins_terabyte_sort_benchmark.html">Yahoo's Hadoop cluster</a>. See the <a href="http://docs.codehaus.org/display/JETTY/Jetty+Powered">Jetty Powered</a> page for 
+	  more uses of Jetty.</p>
+	  
+	  <p>The jetty project is coordinated between the <a href="http://www.eclipse.org/jetty/">the Eclipse Foundation</a> where the latest core components are developed;
+	  and <a href="http://jetty.codehaus.org">the Codehaus</a>, where older versions are maintained and the latest eclipse components are variously integrated, 
+	  extended and repackaged. See the <a href="http://docs.codehaus.org/display/JETTY/About+Jetty">about page</a> for more about the project structure.  
+	  </p>
+	  
+	  
 <p>
 <b>Full commercial support, training and development services for Jetty
 and Jetty-based projects are available from <a href="http://www.webtide.com/">Webtide</a>.
 </b>
 </p>
 
-<h1>Jetty can be used as</h1>
-<ul>
-  <li>a stand-alone traditional web server for static and dynamic content</li>
-  <li>a dynamic content server behind a dedicated HTTP server such as Apache using mod_proxy</li>
-  <li>an embedded component within a Java application</li>
-</ul>
-
-<h1>Jetty is</h1>
-<div class="feature">
-<h2>Simple</h2>
-We want to make Jetty easy to understand and use: 
-<ul>
-  <li>Configurable using either API or XML</li>
-  <li>XML file syntax is a straightforward mapping from the API operating on POJOs</li>
-  <li>Minimal number of lines required to embed a Jetty instance</li>
-</ul>
-</div>
-
-<div class="feature">
-<h2>Scalable</h2>
-In asynchronous Web 2.0 type applications using techniques such as AJAX,
-connections stay open longer than when serving static pages, and thread
-and memory requirements can escalate drastically. With Jetty...
-<ul>
-  <li>Performance degrades gracefully under stress for high quality of service</li>
-  <li>Handle large user loads and long-lived sessions with <a href="http://docs.codehaus.org/display/JETTY/Continuations">continuations</a>, while working within the framework of existing web specifications</li>
-  <li>Integrate with available clustering options such as <a href="http://wadi.codehaus.org">WADI</a> and <a href="http://www.terracotta.org">Terracotta</a></li>
-</ul>
-</div>
-
-<div class="feature">
-<h2>Efficient</h2>
-A lot of effort goes into optimizing Jetty's performance and crafting the code so as to make the footprint as small as possible:
-<ul>
-<li>The core is kept small; extra functionality is in optional jars and dependencies are kept to a minimum</li>
-<li>Scalability is a key concern</li>
-<li>Performance degrades gracefully under stress</li>
-</ul>
-</div>
-<div class="feature">
-<h2>Embeddable</h2>
-Jetty is designed to be a good component:
-  <ul>
-    <li>Usage of dependency injection and inversion of control patterns</li>
-  </ul>
-</div>
-<div class="feature">
-<h2>Pluggable</h2>
-Jetty is architected for pluggability:
-  <ul>
-    <li>Use a provided implementation</li>
-    <li>Code your own using the provided interfaces and abstract classes</li>
-  </ul>
-</div>
-
-<h1>Jetty can be seen</h1>
- <ul>
-  <li>shipped with products to provide out-of-the-box usability eg  <a href="http://tapestry.sourceforge.net">Tapestry</a>, <a href="http://www.liferay.com/">Liferay</a></li>
-  <li>distributed on CDs with books to make examples and exercises ready-to-run</li>
-  <li>incorporated into applications as a HTTP transport eg <a href="http://www.jxta.org/">JXTA</a>, <a href="http://www.mx4j.org">MX4J</a></li>
-  <li>integrated as a web container in JavaEE app servers eg <a href="http://www.objectweb.org/jonas/index.html">JOnAS</a>, <a href="http://geronimo.apache.org">Geronimo</a>, <a href="http://sourceforge.net/projects/jboss//">JBoss</a>, <a href="http://www.huihoo.org/jfox">JFox</a></li>
-  <li>included as a component of an application eg <a href="http://maven.apache.org/continuum">Continuum</a>, <a href="http://www.cenqua.com/fisheye">FishEye</a>, <a href="http://maven.apache.org">Maven</a></li>
- </ul>
-
-<p>
-The <a href="http://docs.codehaus.org/display/JETTY/Jetty+Powered">Jetty Powered Page</a> 
-contains more examples from among the tens of thousands of production Jetty instances. Countless more websites and
-products are based around Jetty, but because Jetty aims to be as unobtrusive as possible, Jetty is invisible!
-</p>
-</div>
 
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 <script type="text/javascript">_uacct="UA-1149868-3"; urchinTracker();</script>
-  </body>
+  </p></div></body>
 </document>

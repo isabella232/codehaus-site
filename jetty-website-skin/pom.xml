@@ -8,6 +8,7 @@
   </parent>
   <groupId>org.mortbay.jetty</groupId>
   <artifactId>jetty-website-skin</artifactId>
+  <version>8-SNAPSHOT</version>
   <name>Jetty Website :: Project Site Skin</name>
   <description>Maven Jetty Site Skin</description>
 </project>
