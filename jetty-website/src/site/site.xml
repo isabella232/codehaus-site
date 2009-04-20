@@ -12,27 +12,31 @@
   </bannerLeft>
   <publishDate format="dd MMMM yyyy HH:mm"/>
   <body>
-    <menu name="About Jetty">
-      <item name="Home" href="index.html"/>
-      <item name="License" href="LICENSE.txt"/>
-      <item name="Jetty Powered" href="http://docs.codehaus.org/display/JETTY/Jetty+Powered"/>
-      <item name="Downloads" href="http://docs.codehaus.org/display/JETTY/Downloading+Jetty"/>
-      <item name="Documentation" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki"/>
+    <menu name="Jetty">
+      <item name="About Jetty" href="http://www.eclipse.org/jetty/about.php" />
+      <item name="jetty@codehaus" href="http://jetty.mortbay.org/jetty/" />
+      <item name="jetty@Eclipse" href="http://www.eclipse.org/jetty/" />
+      <item name="Jetty Powered" href="http://docs.codehaus.org/display/JETTY/Jetty+Powered" />
+      <!--<item name="Licenses" href="" />-->
     </menu>
     <menu name="Resources">
-      <item name="Jetty6 JavaDoc" href="jetty-6/apidocs/index.html"/>
-      <item name="Jetty6 Source XRef" href="jetty-6/xref/index.html"/>
-      <item name="Cometd JavaDoc" href="cometd/apidocs/index.html"/>
-      <item name="Cometd Source XRef" href="cometd/xref/index.html"/>
+      <item name="Downloads" href="http://docs.codehaus.org/display/JETTY/Downloading+Jetty" />
+      <item name="Documentation" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki" />
+      <!--<item name="FAQ" href="" />-->
+      <item name="Mailing Lists" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki#JettyWiki-Mailinglists" />
+      <item name="Jetty6 JavaDoc" href="jetty-6/apidocs/index.html" />
+      <item name="Jetty6 Source XRef" href="jetty-6/xref/index.html" />
+      <!--<item name="Cometd JavaDoc" href="" />-->
+      <!--<item name="Cometd Source XRef" href="" />-->
     </menu>
-    <menu name="Maven Plugins">
-      <item name="maven-jetty-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin"/>
-      <item name="maven-jetty-jspc-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Jspc+Plugin"/>
+    <menu item="Plugins">
+      <item name="jetty-maven-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin" />
+      <item name="jscp-maven-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Jspc+Plugin" />
     </menu>
     <menu name="Commercial Services">
-      <item name="Advice" href="http://www.webtide.com/advice"/>
-      <item name="Consulting" href="http://www.webtide.com/development"/>
-      <item name="Support" href="http://www.webtide.com/support"/>
+      <item name="Advice" href="http://www.webtide.com/advice" />
+      <item name="Consulting" href="http://www.webtide.com/development" />
+      <item name="Support" href="http://www.webtide.com/support" />
     </menu>
   </body>
   <poweredBy>
