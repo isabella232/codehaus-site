@@ -149,3 +149,7 @@ h1 {
   font-size: medium;
   margin: 0pt;
 }
+
+table {
+  width: auto;
+}
