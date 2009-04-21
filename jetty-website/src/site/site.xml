@@ -26,7 +26,7 @@
       <item name="Mailing Lists" href="http://xircles.codehaus.org/projects/jetty/lists" />
       <item name="Jetty6 JavaDoc" href="jetty-6/apidocs/index.html" />
       <item name="Jetty6 Source XRef" href="jetty-6/xref/index.html" />
-      <!--<item name="Cometd JavaDoc" href="" />-->
+      <item name="Cometd JavaDoc" href="http://jetty.mortbay.org/jetty/cometd/apidocs/" />
       <!--<item name="Cometd Source XRef" href="" />-->
     </menu>
     <menu item="Plugins">
