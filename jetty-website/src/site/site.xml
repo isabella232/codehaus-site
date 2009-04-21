@@ -17,13 +17,13 @@
       <item name="jetty@codehaus" href="http://jetty.mortbay.org/jetty/" />
       <item name="jetty@Eclipse" href="http://www.eclipse.org/jetty/" />
       <item name="Jetty Powered" href="http://docs.codehaus.org/display/JETTY/Jetty+Powered" />
-      <!--<item name="Licenses" href="" />-->
+      <item name="Licenses" href="http://www.eclipse.org/jetty/licenses.php" />
     </menu>
     <menu name="Resources">
       <item name="Downloads" href="http://docs.codehaus.org/display/JETTY/Downloading+Jetty" />
       <item name="Documentation" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki" />
       <!--<item name="FAQ" href="" />-->
-      <item name="Mailing Lists" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki#JettyWiki-Mailinglists" />
+      <item name="Mailing Lists" href="http://xircles.codehaus.org/projects/jetty/lists" />
       <item name="Jetty6 JavaDoc" href="jetty-6/apidocs/index.html" />
       <item name="Jetty6 Source XRef" href="jetty-6/xref/index.html" />
       <!--<item name="Cometd JavaDoc" href="" />-->
@@ -32,6 +32,11 @@
     <menu item="Plugins">
       <item name="jetty-maven-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin" />
       <item name="jscp-maven-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Jspc+Plugin" />
+    </menu>
+    <menu item="Project Management">
+      <item name="Project Plan" href="http://xircles.codehaus.org/projects/jetty" />
+      <item name="Bugs" href="http://jira.codehaus.org/browse/JETTY" />
+      <item name="IP Log" href="http://www.eclipse.org/projects/ip_log.php?projectid=rt.jetty" />
     </menu>
     <menu name="Commercial Services">
       <item name="Advice" href="http://www.webtide.com/advice" />
