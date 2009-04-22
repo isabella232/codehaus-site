@@ -12,48 +12,47 @@
        <a href="http://blogs.webtide.com">Blogs about Jetty.</a>
     </iframe>
 
-  <div class="summary">
-   <div class="news"></div>
-    <p>Jetty provides an HTTP server, HTTP client, and <a href="http://java.sun.com/products/servlet/">javax.servlet</a> container. These components are open source and available for commercial use and distribution. </p>
-    
-    <p>Jetty is used in a wide variety of projects and products. Jetty can be embedded in devices, tools,  frameworks, application servers, and clusters. See the <a href="http://docs.codehaus.org/display/JETTY/Jetty+Powered">Jetty Powered</a> page for more uses of Jetty.</p>
-    
-    <p>The core Jetty project is hosted by the <a href="http://www.eclipse.org/">Eclipse Foundation</a>. The Codehaus provides Jetty accessories , integrations, and extensions, as well as hosting older versions of Jetty. See the <a href="http://www.eclipse.org/jetty/about.php">About</a> page for information about the project structure.</p>
-    
-    <table>
-      <tr>
-        <th>Features</th>
-        <th>Jetty Powered</th>
-      </tr>
-      
-      <tr>
-        <td>
-          <ul>
-            <li>Full-featured, standards-based, and open source</li>
-            <li>100% Java</li>
-            <li>Small footprint</li>
-            <li>Embeddable</li>
-            <li>Asynchronous</li>
-            <li>Enterprise scalable</li>
-            <li>Dual <a href="http://www.eclipse.org/jetty/licenses.php">licensed</a> under Apache and Eclipse</li>
-          </ul>
-        </td>
-      
-        <td>
-          <ul>
-            <li>Large clusters, such as the <a href="http://developer.yahoo.net/hadoop/">Yahoo Hadoop Cluster</a></li>
-            <li>Application Servers, such as <a href="http://geronimo.apache.org/">Apache Geronimo</a></li>
-            <li>Framework, such as <a href="http://code.google.com/webtoolkit/">GWT</a></li>
-            <li>Tools, such as the <a href="http://www.eclipse.org/">Eclipse IDE</a></li>
-            <li>Devices, such as <a href="http://code.google.com/p/i-jetty/">phones</a></li>
-            <li><a href="http://docs.codehaus.org/display/JETTY/Jetty+Powered">More...</a></li>
-          </ul>
-        </td>    
-      </tr>
-    </table>
-  </div>
+    <div class="summary">
+      <div class="news"></div>
+        <p>Jetty provides an HTTP server, HTTP client, and <a href="http://java.sun.com/javaee/5/docs/api/javax/servlet/package-summary.html">javax.servlet</a> container. These components are open source and available for commercial use and distribution.</p> 
+        <p>Jetty is used in a wide variety of projects and products. Jetty can be embedded in devices, tools,  frameworks, application servers, and clusters. See the <a href="http://docs.codehaus.org/display/JETTY/Jetty+Powered">Jetty Powered</a> page for more uses of Jetty.</p>
+        <p>The core Jetty project is hosted by the <a href="http://www.eclipse.org/">Eclipse Foundation</a>. The Codehaus provides Jetty accessories , integrations, and extensions, as well as hosting older versions of Jetty. See the <a href="http://www.eclipse.org/jetty/about.php">About</a> page for information about the project structure.</p> 
+	  
+        <table>
+          <tr>
+            <th>Features</th>
+            <th>Jetty Powered</th>
+          </tr>
+          
+          <tr>
+            <td>
+              <ul>
+                <li>Full-featured, standards-based, and open source</li>
+                <li>100% Java</li>
+                <li>Small footprint</li>
+                <li>Embeddable</li>
+                <li>Asynchronous</li>
+                <li>Enterprise scalable</li>
+                <li>Dual <a href="http://www.eclipse.org/jetty/licenses.php">licensed</a> under Apache and Eclipse</li>
+              </ul>
+            </td>
+          
+            <td>
+              <ul>
+                <li>Large clusters, such as the <a href="http://developer.yahoo.net/hadoop/">Yahoo Hadoop Cluster</a></li>
+                <li>Cloud computing and SaaS, such as the <a href="http://code.google.com/appengine/">Google AppEngine</a></li>
+                <li>Application Servers, such as <a href="http://geronimo.apache.org/">Apache Geronimo</a></li>
+                <li>Frameworks, such as <a href="http://code.google.com/webtoolkit/">GWT</a></li>
+                <li>Tools, such as the <a href="http://www.eclipse.org/">Eclipse IDE</a></li>
+                <li>Devices, such as <a href="http://code.google.com/p/i-jetty/">phones</a></li>
+                <li><a href="http://docs.codehaus.org/display/JETTY/Jetty+Powered">More...</a></li>
+              </ul>
+            </td>    
+          </tr>
+        </table>
+    </div>
 
-  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
-  <script type="text/javascript">_uacct="UA-1149868-3"; urchinTracker();</script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">_uacct="UA-1149868-3"; urchinTracker();</script>
   </body>
 </document>
