@@ -153,3 +153,7 @@ h1 {
 table {
   width: auto;
 }
+
+table.bodyTable tr th {
+  text-align: center;
+}
