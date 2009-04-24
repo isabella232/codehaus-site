@@ -11,8 +11,8 @@
   <packaging>pom</packaging>
   <properties>
     <jetty6.version>6.1.16</jetty6.version>
-    <jetty7.version>7.0.0.M0</jetty7.version>
-    <cometd.version>1.0.beta7</cometd.version>
+    <jetty7.version>7.0.0.M1</jetty7.version>
+    <cometd.version>1.0.beta8</cometd.version>
 <!--
     <maven-wagon-version>1.0-beta-4</maven-wagon-version>
 -->
