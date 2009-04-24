@@ -15,13 +15,13 @@
     <menu name="Jetty">
       <item name="About Jetty" href="http://www.eclipse.org/jetty/about.php" />
       <item name="jetty@codehaus" href="http://jetty.mortbay.org/jetty/" />
-      <item name="jetty@Eclipse" href="http://www.eclipse.org/jetty/" />
+      <item name="jetty@eclipse" href="http://www.eclipse.org/jetty/" />
       <item name="Jetty Powered" href="http://docs.codehaus.org/display/JETTY/Jetty+Powered" />
       <item name="Licenses" href="http://www.eclipse.org/jetty/licenses.php" />
     </menu>
     <menu name="Resources">
-      <item name="Downloads" href="http://docs.codehaus.org/display/JETTY/Downloading+Jetty" />
       <item name="Documentation" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki" />
+      <item name="Downloads" href="http://docs.codehaus.org/display/JETTY/Downloading+Jetty" />
       <!--<item name="FAQ" href="" />-->
       <item name="Mailing Lists" href="http://xircles.codehaus.org/projects/jetty/lists" />
       <item name="Jetty6 JavaDoc" href="jetty-6/apidocs/index.html" />
