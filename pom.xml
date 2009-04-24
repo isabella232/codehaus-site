@@ -6,7 +6,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jetty-site-parent</artifactId>
-  <version>9</version>
+  <version>10-SNAPSHOT</version>
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <properties>
