@@ -6,7 +6,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jetty-site-parent</artifactId>
-  <version>10-SNAPSHOT</version>
+  <version>10</version>
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <properties>
@@ -22,9 +22,9 @@
     <module>jetty-website</module>
   </modules>
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-parent-9</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-parent-9</developerConnection>
-    <url>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-parent-9</url>
+    <connection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-parent-10</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-parent-10</developerConnection>
+    <url>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-parent-10</url>
   </scm>
   <build>
     <plugins>
