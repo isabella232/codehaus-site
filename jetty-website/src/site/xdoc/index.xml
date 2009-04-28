@@ -1,19 +1,11 @@
 <?xml version="1.0"?>
 <document>
-  <properties>
+   <properties>
     <title>Jetty WebServer</title>
   </properties>
   <body>
     <link REL="icon" HREF="./images/jicon.gif" TYPE="image/gif"/>
-    <iframe src="http://www.webtide.com/include/inc_offers.jsp" class="offers">
-       <a href="http://www.webtide.com">Webtide special offers</a>
-    </iframe>
-    <iframe src="http://www.webtide.com/include/inc_blog.jsp" class="study">
-       <a href="http://blogs.webtide.com">Blogs about Jetty.</a>
-    </iframe>
-
-    <div class="summary">
-      <div class="news"></div>
+    <div id="middleColumn">
         <p>Jetty provides an HTTP server, HTTP client, and <a href="http://java.sun.com/javaee/5/docs/api/javax/servlet/package-summary.html">javax.servlet</a> container. These components are open source and available for commercial use and distribution.</p> 
         <p>Jetty is used in a wide variety of projects and products. Jetty can be embedded in devices, tools,  frameworks, application servers, and clusters. See the <a href="http://docs.codehaus.org/display/JETTY/Jetty+Powered">Jetty Powered</a> page for more uses of Jetty.</p>
         <p>The core Jetty project is hosted by the <a href="http://www.eclipse.org/">Eclipse Foundation</a>. The codehaus provides Jetty accessories , integrations, and extensions, as well as hosting older versions of Jetty. See the <a href="http://www.eclipse.org/jetty/about.php">About</a> page for information about the project structure.</p> 
@@ -54,6 +46,14 @@
         </table>
         
         <p><strong>Full commercial support, training and development services for Jetty and Jetty-based projects are available from <a href="http://www.webtide.com/">Webtide</a>.</strong></p>
+    </div>
+    <div id="rightColumn">
+      <iframe src="http://www.webtide.com/include/inc_offers.jsp" class="offers">
+        <a href="http://www.webtide.com">Webtide special offers</a>
+      </iframe>
+      <iframe src="http://www.webtide.com/include/inc_blog.jsp" class="study">
+        <a href="http://blogs.webtide.com">Blogs about Jetty.</a>
+      </iframe>
     </div>
 
     <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>

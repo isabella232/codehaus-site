@@ -7,10 +7,10 @@
   </skin>
   <bannerLeft>
     <name>Jetty</name>
-    <src>./images/jetty_banner.gif</src>
+    <src>./images/jetty_logo.png</src>
     <href>http://jetty.mortbay.org/jetty</href>
   </bannerLeft>
-  <publishDate format="dd MMMM yyyy HH:mm"/>
+  <publishDate format="dd MMMM yyyy HH:mm" position="bottom" />
   <body>
     <menu name="Jetty">
       <item name="About Jetty" href="http://www.eclipse.org/jetty/about.php" />
@@ -29,11 +29,11 @@
       <item name="Cometd JavaDoc" href="http://jetty.mortbay.org/jetty/cometd/apidocs/" />
       <!--<item name="Cometd Source XRef" href="" />-->
     </menu>
-    <menu item="Plugins">
+    <menu name="Plugins">
       <item name="jetty-maven-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin" />
       <item name="jscp-maven-plugin" href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Jspc+Plugin" />
     </menu>
-    <menu item="Project Management">
+    <menu name="Project Management">
       <item name="Project Plan" href="http://xircles.codehaus.org/projects/jetty" />
       <item name="Bugs" href="http://jira.codehaus.org/browse/JETTY" />
       <item name="IP Log" href="http://www.eclipse.org/projects/ip_log.php?projectid=rt.jetty" />
@@ -47,7 +47,7 @@
   <poweredBy>
     <logo name="Jetty" href="http://docs.codehaus.org/display/JETTY/Jetty+Powered" img="./images/small_powered_by.gif"/>
     <logo name="Webtide" href="http://www.webtide.com" img="./images/webtide_logo.jpg" width="150" height="96" />
-    <logo name="Maven" href="http://maven.apache.org" img="./images/logos/maven-feather.png"/>
+    <logo name="Maven" href="http://maven.apache.org" img="./images/maven-feather.png"/>
     <logo name="codehaus" href="http://www.codehaus.org" img="./images/codehaus-small.png"/>
     <logo name="INETU" href="http://www.inetu.net" img="./images/inetu.gif"/>
   </poweredBy>
