@@ -22,9 +22,9 @@
     <module>jetty-website</module>
   </modules>
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-12</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-12</developerConnection>
-    <url>scm:svn:https://svn.codehaus.org/jetty/site/tags/jetty-site-12</url>
+    <connection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/jetty/site/trunk</developerConnection>
+    <url>scm:svn:https://svn.codehaus.org/jetty/site/trunk</url>
   </scm>
   <build>
     <plugins>
