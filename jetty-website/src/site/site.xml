@@ -6,8 +6,8 @@
     <version>12-SNAPSHOT</version>
   </skin>
   <bannerLeft>
-    <name>Jetty</name>
-    <src>./images/jetty_logo.png</src>
+    <name>Codehaus</name>
+    <src>./images/codehaus.gif</src>
     <href>http://jetty.mortbay.org/jetty</href>
   </bannerLeft>
   <publishDate format="dd MMMM yyyy HH:mm" position="bottom" />
