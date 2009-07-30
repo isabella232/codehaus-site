@@ -7,7 +7,7 @@
   </skin>
   <bannerLeft>
     <name>Codehaus</name>
-    <src>./images/codehaus.gif</src>
+    <src>./images/codehaus.png</src>
     <href>http://jetty.mortbay.org/jetty</href>
   </bannerLeft>
   <publishDate format="dd MMMM yyyy HH:mm" position="bottom" />

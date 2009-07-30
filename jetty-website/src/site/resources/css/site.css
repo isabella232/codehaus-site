@@ -2,7 +2,7 @@
 
 body 
 {
-	background-color: #EFEFEF;
+    background-color: #DEDEDE;
 	font-family: Arial,sans-serif;
 	text-align: center;
 }
@@ -43,6 +43,7 @@ body
 	float: left;
 	margin-right: 20px;
 	width: 445px;
+	text-align: left;
 }
 
 #rightColumn
@@ -152,7 +153,7 @@ img
 /* header */
 #banner
 {
-  background-color: #EFEFEF;
+  background-color: #DEDEDE;
   text-align: left;
 }
 
