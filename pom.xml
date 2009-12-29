@@ -10,9 +10,9 @@
   <name>Jetty Website :: Site Parent</name>
   <packaging>pom</packaging>
   <properties>
-    <jetty6.version>6.1.19</jetty6.version>
-    <jetty7.version>7.0.0.M2</jetty7.version>
-    <cometd.version>1.0.beta8</cometd.version>
+    <jetty6.version>6.1.22</jetty6.version>
+    <jetty7.version>7.0.1.v20091125</jetty7.version>
+    <cometd.version>1.0.1</cometd.version>
 <!--
     <maven-wagon-version>1.0-beta-4</maven-wagon-version>
 -->
