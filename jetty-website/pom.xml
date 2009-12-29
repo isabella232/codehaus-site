@@ -161,7 +161,7 @@
     <site>
       <id>jetty.website</id>
       <name>Jetty Website</name>
-      <url>scp://www.mortbay.org/home/ftp/pub/staging/website</url>
+      <url>davs://dav.codehaus.org/jetty/jetty</url>
     </site>
   </distributionManagement>
 </project>

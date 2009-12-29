@@ -3,18 +3,18 @@
   <skin>
     <groupId>org.mortbay.jetty</groupId>
     <artifactId>jetty-website-skin</artifactId>
-    <version>12-SNAPSHOT</version>
+    <version>14-SNAPSHOT</version>
   </skin>
   <bannerLeft>
     <name>Codehaus</name>
     <src>./images/codehaus.png</src>
-    <href>http://jetty.mortbay.org/jetty</href>
+    <href>http://jetty.codehaus.org/jetty</href>
   </bannerLeft>
   <publishDate format="dd MMMM yyyy HH:mm" position="bottom" />
   <body>
     <menu name="Jetty">
       <item name="About Jetty" href="http://www.eclipse.org/jetty/about.php" />
-      <item name="jetty@codehaus" href="http://jetty.mortbay.org/jetty/" />
+      <item name="jetty@codehaus" href="http://jetty.codehaus.org/jetty/" />
       <item name="jetty@eclipse" href="http://www.eclipse.org/jetty/" />
       <item name="Jetty Powered" href="http://docs.codehaus.org/display/JETTY/Jetty+Powered" />
       <item name="Licenses" href="http://www.eclipse.org/jetty/licenses.php" />
@@ -26,7 +26,7 @@
       <item name="Mailing Lists" href="http://xircles.codehaus.org/projects/jetty/lists" />
       <item name="Jetty6 JavaDoc" href="jetty-6/apidocs/index.html" />
       <item name="Jetty6 Source XRef" href="jetty-6/xref/index.html" />
-      <item name="Cometd JavaDoc" href="http://jetty.mortbay.org/jetty/cometd/apidocs/" />
+      <item name="Cometd JavaDoc" href="http://jetty.codehaus.org/jetty/cometd/apidocs/" />
       <!--<item name="Cometd Source XRef" href="" />-->
     </menu>
     <menu name="Plugins">
