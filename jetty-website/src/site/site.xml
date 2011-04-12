@@ -20,6 +20,7 @@
       <item name="Licenses" href="http://www.eclipse.org/jetty/licenses.php" />
     </menu>
     <menu name="Resources">
+      <item name="Blogs" href="http://webtide.intalio.com" />
       <item name="Documentation" href="http://docs.codehaus.org/display/JETTY/Jetty+Wiki" />
       <item name="Downloads" href="http://docs.codehaus.org/display/JETTY/Downloading+Jetty" />
       <!--<item name="FAQ" href="" />-->
