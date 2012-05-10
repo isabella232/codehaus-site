@@ -50,6 +50,5 @@
     <logo name="Webtide" href="http://www.webtide.com" img="./images/webtide_logo.jpg" width="150" height="96" />
     <logo name="Maven" href="http://maven.apache.org" img="./images/maven-feather.png"/>
     <logo name="codehaus" href="http://www.codehaus.org" img="./images/codehaus-small.png"/>
-    <logo name="INETU" href="http://www.inetu.net" img="./images/inetu.gif"/>
   </poweredBy>
 </project>
